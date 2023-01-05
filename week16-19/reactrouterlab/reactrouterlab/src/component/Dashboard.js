@@ -1,13 +1,11 @@
 import React from "react"
+import Stockshow from './Stockshow';
+import stock from './Stock-data.js'
 function Dashboard () {
-    return (
-        <div className="App">
-          <div className="container">
-         <span className="istocks">iStocks </span>&ensp; &ensp;
-         <span>Stocks</span>&ensp; &ensp;
-         <span>About</span>
-         </div>
-        </div>
-      );
+  return (
+    <div>
+      <Stockshow stock={stock} />
+    </div>
+  );
 }
 export default Dashboard;
